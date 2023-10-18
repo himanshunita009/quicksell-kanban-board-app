@@ -1,0 +1,55 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.app-header-back {
+    background-color: white;
+    padding: 16px;
+}
+.dropdown-back {
+    padding: 0.5rem;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    border-radius: 0.25rem;
+    position: relative;
+}
+.dropdown-back:hover {
+    cursor: pointer;
+}
+.drop-down-menu {
+    position: absolute;
+    padding: 1rem;
+    flex-direction: column;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    min-width: 250px;
+    width: fit-content;
+    border-radius: 0.5rem;
+    background-color: rgb(245, 245, 245);
+    z-index: 1;
+    margin-top: 0.5rem;
+}
+
+
+
+.menu-group-back {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+.menu-group-back > select {
+    padding: 0.25rem;
+    font-size: medium;
+    border-radius: 0.25rem;
+    outline: none;
+}
+.menu-group-back > .gary-color {
+    font-size: large;
+}

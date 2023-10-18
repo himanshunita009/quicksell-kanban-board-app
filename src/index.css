@@ -1,0 +1,10 @@
+body{ background-color: rgb(245, 245, 245);}
+.gary-color {
+    color: gray;
+}
+
+.user-icon {
+    background-color: orange;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
