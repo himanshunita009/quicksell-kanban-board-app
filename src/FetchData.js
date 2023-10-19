@@ -42,7 +42,6 @@ for (const status of allStatus) {
         result['Status'][status] = [];
 }
 
-console.log(Object.keys(result['Status']));
 
 
 export default function sortResult(category){
