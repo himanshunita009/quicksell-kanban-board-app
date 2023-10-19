@@ -6,6 +6,8 @@
 .app-header-back {
     background-color: white;
     padding: 16px;
+    position: sticky;
+    top: 0.5rem;
 }
 .dropdown-back {
     padding: 0.5rem;

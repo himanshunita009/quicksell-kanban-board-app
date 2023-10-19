@@ -35,13 +35,15 @@ const result = data.tickets.reduce((obj,val) => {
     return obj;
 },{Status: {},User: {},Priority: {}});
 
-function compare(str1,str2){
-    for(let i = 0;i<str1.length && i < str2.length;++i){
-        if(str2[i] > str1[i])
-            return false;
-    }
-    return str1.length <= str2.length;
+const allStatus = ['Todo','In progress','Backlog','Done','Cancelled'];
+
+for (const status of allStatus) {
+    if(!result['Status'].hasOwnProperty(status))
+        result['Status'][status] = [];
 }
+
+console.log(Object.keys(result['Status']));
+
 
 export default function sortResult(category){
     for (const mainkey in result) {
